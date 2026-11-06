@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SecureTunnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>SecureTunnel</h1>
+        <p>TLS / SSH Handshake Visualizer</p>
+
+        <div class="buttons">
+            <button onclick="runTLS()">Simulate TLS 1.3</button>
+            <button onclick="runSSH()">Simulate SSH</button>
+        </div>
+
+        <div id="result">
+            <h2>Handshake Result</h2>
+            <p>Select a protocol to start.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

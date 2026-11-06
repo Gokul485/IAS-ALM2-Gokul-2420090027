@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CryptoVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🔐 CryptoVault</h1>
+        <p>RSA Encryption & Digital Signature System</p>
+
+        <button onclick="generateKeys()">Generate RSA Keys</button>
+
+        <h2>Public Key</h2>
+        <textarea id="publicKey" readonly></textarea>
+
+        <h2>Private Key</h2>
+        <textarea id="privateKey" readonly></textarea>
+
+        <h2>Encrypt Message</h2>
+        <textarea id="message" placeholder="Enter message"></textarea>
+        <button onclick="encryptMessage()">Encrypt</button>
+
+        <h2>Ciphertext</h2>
+        <textarea id="ciphertext" readonly></textarea>
+
+        <h2>Decrypt Message</h2>
+        <button onclick="decryptMessage()">Decrypt</button>
+
+        <h2>Decrypted Text</h2>
+        <textarea id="decrypted" readonly></textarea>
+
+        <hr>
+
+        <h2>Digital Signature</h2>
+        <button onclick="signMessage()">Sign Message</button>
+
+        <h2>Signature</h2>
+        <textarea id="signature" readonly></textarea>
+
+        <button onclick="verifySignature()">Verify Signature</button>
+
+        <h2>Verification Result</h2>
+         <div id="verification"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

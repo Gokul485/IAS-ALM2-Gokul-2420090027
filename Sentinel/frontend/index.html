@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentinel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Sentinel</h1>
+        <p>Intrusion Detection & Firewall Simulator</p>
+
+        <div class="form">
+            <input id="source" placeholder="Source IP" value="192.168.1.10">
+            <input id="destination" placeholder="Destination IP" value="192.168.1.20">
+            <input id="port" type="number" placeholder="Port" value="80">
+            <input id="protocol" placeholder="Protocol" value="TCP">
+        </div>
+
+        <button onclick="checkFirewall()">Check Firewall</button>
+        <button onclick="detectThreat()">Detect Intrusion</button>
+
+        <div id="result">
+            <h2>Result</h2>
+            <p>Enter network details and select an action.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
